@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <th:block th:include="fragments/common/head"></th:block>
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Main Sidebar Container -->
+        <th:block th:include="fragments/common/sidebar"></th:block>
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Main Topbar Container -->
+                <th:block th:include="fragments/common/topbar"></th:block>
+                <!-- Main Template Container -->
+                <div layout:fragment="content">
+                </div>
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer Container -->
+            <th:block th:include="fragments/common/footer"></th:block>
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <th:block th:include="fragments/common/topbutton"></th:block>
+    <!-- Logout Modal-->
+    <th:block th:include="fragments/common/logoutmodal"></th:block>
+    <!-- Script-->
+    <th:block th:include="fragments/common/script"></th:block>
+</body>
+
+</html>

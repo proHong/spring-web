@@ -1,0 +1,85 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" th:href="@{/boards/list}">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">AIGENN <sup>AI</sup></div>
+    </a>
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Dashboard
+    </div>
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/boards/list}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>대쉬보드</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        ANALYTICS
+    </div>
+
+    <!-- Nav Item - ANALYTICS -->
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/boards/list}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>영상분석</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        MATERIALS
+    </div>
+
+    <!-- Nav Item - MATERIALS -->
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/boards/list}">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>작동원리</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        ADDONS
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>문의 및 공지</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" th:href="@{/notice}">공지내용</a>
+                <a class="collapse-item" th:href="@{/boards/list}">문의사항</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->
